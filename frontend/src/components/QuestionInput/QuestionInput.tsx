@@ -62,13 +62,13 @@ export const QuestionInput = ({ onSend, disabled, placeholder, clearOnSend, conv
         className={styles.questionInputSendButtonContainer}
         role="button"
         tabIndex={0}
-        aria-label="Ask question button"
+        aria-label="Faça uma pergunta!"
         onClick={sendQuestion}
         onKeyDown={e => (e.key === 'Enter' || e.key === ' ' ? sendQuestion() : null)}>
         {sendQuestionDisabled ? (
           <SendRegular className={styles.questionInputSendButtonDisabled} />
         ) : (
-          <img src={Send} className={styles.questionInputSendButton} alt="Send Button" />
+          <img src={Send} className={styles.questionInputSendButton} alt="Botão Enviar" />
         )}
       </div>
       <div className={styles.questionInputBottomBorder} />
